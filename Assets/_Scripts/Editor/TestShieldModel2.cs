@@ -1,50 +1,6 @@
 ﻿using NUnit.Framework;
 public class TestShieldModel2
 {
-
-
-	/*
-	[Test]
-	public void TestAfterOneDamageRepairIsTrueAndStrengthIsNintyNine()
-	{
-		// Arrange
-		ShieldModel sm = new ShieldModel();
-		int damage = 1;
-		int strength = 99;
-
-		// Act
-		bool repairSuccess = sm.IsRepairable();
-		int result = (sm.GetStrength()-damage);
-
-		// Assert
-		Assert.True(repairSuccess);
-		Assert.AreEqual(strength,result);
-	}
-
-
-
-	*/
-
-
-	[Test]
-	public void TestAfter1DamageRepairIsTrueAndStrengthIs99Version2()
-	{
-		// Arrange
-		ShieldModel sm = new ShieldModel();
-		int damage = 1;
-		int strength = 99;
-
-		// Act
-		bool repairSuccess = sm.IsRepairable();
-		//int result = (sm.GetStrength()-damage);
-		int result = sm.TakeDamage(damage);
-
-		// Assert
-		Assert.True(repairSuccess);
-		Assert.AreEqual(strength,result);
-	}
-
-
 	[Test]
 	public void TestStrengthIsOneHundred()
 	{
@@ -75,8 +31,6 @@ public class TestShieldModel2
 		Assert.AreEqual (expectedResult, result);
 	}
 
-	/*
-
 	[Test]
 	public void TestRepairthresholdIsTwentyFive()
 	{
@@ -90,7 +44,7 @@ public class TestShieldModel2
 		// Assert
 		Assert.AreEqual (expectedResult, result);
 	}
-
+		
 	[Test]
 	public void TestIsRepairableIsTrue()
 	{
@@ -103,7 +57,4 @@ public class TestShieldModel2
 		// Assert
 		Assert.True(result);
 	}
-
-*/
-
 }
