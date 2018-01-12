@@ -16,6 +16,16 @@
         return this.strength;
     }
 
+    public int GetRepairQuantity()
+    {
+        return this.RepairQuantity;
+    }
+
+    public int GetRepairableThreshold()
+    {
+        return this.RepairableThreshold;
+    }
+
     // add to strength - but not go about 100
     public void AddStrength(int unitsToAdd)
     {
