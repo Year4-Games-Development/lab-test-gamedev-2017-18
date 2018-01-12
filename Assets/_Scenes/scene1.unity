@@ -38,11 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 9
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 8
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -854,7 +854,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1087612895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105063743}
+        m_MethodName: ButtonAction1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1087612895
@@ -965,7 +976,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1282385310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105063743}
+        m_MethodName: ButtonActionTick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1282385310
@@ -1150,7 +1172,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018654626}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2105063743}
+        m_MethodName: ButtonAction10
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2018654626
@@ -1198,6 +1231,7 @@ GameObject:
   - component: {fileID: 2105063740}
   - component: {fileID: 2105063739}
   - component: {fileID: 2105063738}
+  - component: {fileID: 2105063743}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1275,6 +1309,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105063743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105063737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b3a35bdc8dafa4eb988d9c7fbbda17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view:
+    images:
+    - {fileID: 2800000, guid: 03f6b20b980854ad1bd8816137934dfd, type: 3}
+    - {fileID: 2800000, guid: 5b45bc71a2da84863a0076e205c2be12, type: 3}
+    - {fileID: 2800000, guid: 3f4b01a6383ac4d089f2752c3b2b7511, type: 3}
+    - {fileID: 2800000, guid: 0833769d5a26946879a62195117aef6b, type: 3}
+    - {fileID: 2800000, guid: b1c4e6e8b2e7d4a32ac835eecd469e70, type: 3}
+    - {fileID: 2800000, guid: 1b5a8eb73c18d4acb8b5b0c94240f71d, type: 3}
+    - {fileID: 2800000, guid: 3c08c35c5383b4dd7891196fd265c847, type: 3}
+    - {fileID: 2800000, guid: a70a1fbcf9aa14c439c6c021fb4a45fd, type: 3}
+    - {fileID: 2800000, guid: 14bc2f0a3b02f499f8e62819a3e1a7a9, type: 3}
+    - {fileID: 2800000, guid: ca89efdb4f55948628e3e2ec537231b6, type: 3}
+    - {fileID: 2800000, guid: 24c071a2e22684f5793cd7430f28aefb, type: 3}
+    Strength: {fileID: 556278003}
+    Repairable: {fileID: 854358557}
+    circleImage: {fileID: 542523931}
 --- !u!1 &2143919127
 GameObject:
   m_ObjectHideFlags: 0
